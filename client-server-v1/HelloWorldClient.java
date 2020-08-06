@@ -6,7 +6,8 @@ public class HelloWorldClient {
 	try {
 	    int serverPort = 8080;
 
-	    InetAddress host = InetAddress.getByName("your IP address"); 
+	    // 192.168.56.101
+	    InetAddress host = InetAddress.getByName("192.168.56.101"); 
 	    System.out.println("Connecting to server on port " + serverPort); 
 
 	    Socket socket = new Socket(host, serverPort); 
