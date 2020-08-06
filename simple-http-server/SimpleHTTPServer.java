@@ -14,7 +14,7 @@ public class SimpleHTTPServer {
         while (true) {
             try (Socket socket = server.accept()) {
                 Date today = new Date();
-                String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + "Hello World";
+                String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + "<h1 style=\"text-align:center;\"> Hello World! <h1>";
                 socket.getOutputStream().write(httpResponse.getBytes("UTF-8"));
             }
         }
